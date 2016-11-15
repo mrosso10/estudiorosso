@@ -12,10 +12,11 @@ html[lang="en"]
     .container
       .row
         .col-sm-6
-          h2
-            | ESTUDIO
-            br
-            | ROSSO
+          a href="/"
+            h2
+              | ESTUDIO
+              br
+              | ROSSO
         .col-sm-6.text-right
           .f4 Hacenos tu consulta ahora
           .f4 4371 6436 | whatsapp 1551443125
@@ -29,7 +30,7 @@ html[lang="en"]
               .f5
                 | Mi objetivo principal es brindarle a mis clientes una atención personalizada, profesional y responsable en la búsqueda de soluciones alternativas, cuidando sus intereses.
             .col-sm-6
-              form
+              form method="post" action="contacto.php"
                 .form-group
                   label for="nombre" Nombre
                   input.form-control name="nombre"

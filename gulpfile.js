@@ -18,6 +18,11 @@ gulp.task('slim', function(){
     .pipe(gulp.dest("./dist/"));
 });
 
+gulp.task('php', function(){
+  gulp.src("./app/controllers/*.php")
+    .pipe(gulp.dest("./dist/"));
+});
+
 
 var
     source = 'app/assets/stylesheets/',
@@ -56,8 +61,9 @@ gulp.task('sass', ['fonts'], function () {
         .pipe(gulp.dest(scss.out));
 });
 
-gulp.task('watch', ['sass', 'slim'], function(){
+gulp.task('watch', ['sass', 'slim', 'php'], function(){
   gulp.watch('app/views/*.slim', ['slim']);
+  gulp.watch('app/controllers/*.php', ['php']);
   gulp.watch(scss.watch, ['sass']);
 });
 
