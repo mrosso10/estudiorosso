@@ -10,6 +10,8 @@
   "license": "BSD",
   "devDependencies": {
     "gulp": "~3.9.1",
-    "gulp-slim": "~0.3.0"
+    "gulp-slim": "~0.3.0",
+    "bootstrap-sass": "~3.3.7",
+    "gulp-sass": "~2.3.2"
   }
 }

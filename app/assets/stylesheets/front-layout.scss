@@ -1,0 +1,53 @@
+.table tr.dark {
+  background-color: #f9f9f9;
+}
+
+.frontbar {
+  div[class*="col-"] {
+    height: 40px;
+    > * {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+.f1 {
+  font-size: 36px;
+}
+
+.f2 {
+  font-size: 30px;
+}
+
+.f3 {
+  font-size: 24px;
+}
+
+.f4 {
+  font-size: 18px;
+}
+
+.f5 {
+  font-size: 14px;
+}
+
+.f6 {
+  font-size: 12px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.mbs {
+  margin-bottom: 10px;
+}
+
+.no-padding-left {
+  padding-left: 0!important;
+}
+
+// .input-group.multigroup .form-control {
+//   width: 50%;
+// }
