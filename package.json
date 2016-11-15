@@ -1,0 +1,15 @@
+{
+  "name": "estudiorosso",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-slim": "~0.3.0"
+  }
+}
