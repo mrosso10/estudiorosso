@@ -36,6 +36,12 @@
   font-size: 12px;
 }
 
+@media(max-width: 600px) {
+  .f2 {
+    font-size: 20px;
+  }
+}
+
 .no-margin {
   margin: 0;
 }
@@ -46,6 +52,10 @@
 
 .no-padding-left {
   padding-left: 0!important;
+}
+
+.dilb {
+  display: inline-block;
 }
 
 // .input-group.multigroup .form-control {

@@ -13,7 +13,7 @@ gulp.task('slim', function(){
   gulp.src("./app/views/*.slim")
     .pipe(slim({
       // rails: true,
-      pretty: true,
+      // pretty: true,
     }))
     .pipe(gulp.dest("./dist/"));
 });
@@ -21,6 +21,15 @@ gulp.task('slim', function(){
 gulp.task('php', function(){
   gulp.src("./app/controllers/*.php")
     .pipe(gulp.dest("./dist/"));
+});
+gulp.task('img', function(){
+  gulp.src("./app/assets/images/**/*")
+    .pipe(gulp.dest("./dist/images"));
+});
+
+gulp.task('js', function(){
+  gulp.src("./app/assets/javascripts/**/*")
+    .pipe(gulp.dest("./dist/javascripts"));
 });
 
 
@@ -61,9 +70,20 @@ gulp.task('sass', ['fonts'], function () {
         .pipe(gulp.dest(scss.out));
 });
 
-gulp.task('watch', ['sass', 'slim', 'php'], function(){
+gulp.task('watch', ['sass', 'slim', 'php', 'img', 'js', 'jquery'], function(){
+  gulp.watch('app/assets/javascripts/**/*.js', ['js']);
   gulp.watch('app/views/*.slim', ['slim']);
   gulp.watch('app/controllers/*.php', ['php']);
   gulp.watch(scss.watch, ['sass']);
 });
 
+
+var jquery = require('gulp-jquery');
+gulp.task('jquery', function () {
+    return jquery.src({
+        release: 2, //jQuery 2 
+        flags: ['-deprecated', '-event/alias', '-ajax/script', '-ajax/jsonp', '-exports/global']
+    })
+    .pipe(gulp.dest('./dist/vendor/'));
+    // creates ./public/vendor/jquery.custom.js 
+});

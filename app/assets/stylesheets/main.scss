@@ -2,19 +2,144 @@
 @import "front-layout";
 // @import "bootstrap/theme";
 
-
-.middle-row {
-  background-image: url(http://aliciabarreto.com/images/o-LAWYER-CLIENT-facebook.jpg);
+.custom-navbar {
+  height: 84px;
+  
+  .col-sm-* {
+    padding: 18px 0;
+  }
+}
+.backed {
+  background-image: url(../images/back.jpg);
   background-attachment: fixed;
-  .overlay {
-    background-color: rgba(255, 255, 255, 0.4);
-    .container {
-      padding: 20px;
+  background-position: 50% 50%;
+  background-size: 100%;
+}
+.overlay {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.overlay-dark {
+  background-color: rgba(82, 82, 82, 0.43);;
+}
+.middle-row {
+  .container {
+    padding: 20px;
+    @media (min-width: 1000px) {
+      padding: 80px;
+    }
+  }
+  .white-font {
+    color: white;
+    text-shadow: black 1px 3px;
+  }
+  .descripcion {
+    text-shadow: grey 1px 1px;
+  }
+}
+
+a.home {
+  color: black;
+  &:hover {
+    text-decoration: none;
+  }
+  &:visited {
+    color: black;
+  }
+  img {
+    width: 30px;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-top: 7px;
+  }
+  .brand {
+    margin-top: 20px;
+    color: grey;
+    letter-spacing: 4px;
+    font-weight: bold;
+    .light {
+      color: lightgrey;
+      margin-right: 7px;
     }
   }
 }
 
-.white-font {
+form {
   color: white;
-  text-shadow: black 3px 3px;
+  text-shadow: black 1px 1px;
+}
+.servicios {
+  font-size: 16px;
+  font-weight: bold;
+  li {
+    margin-bottom: 6px;
+  }
+}
+.back-white {
+  background-color: white;
+}
+
+.banner {
+  .container {
+    padding: 40px;
+    font-size: 18px;
+    color: white;
+    text-shadow: black 1px 3px;
+  }
+}
+
+@media(max-width: 600px) {
+  .f2 {
+    font-size: 20px;
+  }
+}
+
+.perfil {
+  .image-wrapper {
+    border-radius: 270px;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .nombre {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  ul {
+    font-size: 17px;
+  }
+}
+.footer {
+  padding: 30px 0;
+  font-size: 16px;
+  color: white;
+  text-shadow: black 1px 1px;
+  font-weight: bold;
+}
+
+.flyer {
+  .column {
+    display: inline-block;
+    height: 900px;
+  }
+  .column.left, .column.right {
+    width: 20%;
+  }
+  .column {
+    &.right {
+      background: linear-gradient(to left, rgba(255,255,255,.3), rgba(255,255,255,1));
+      // @extend .overlay
+      margin-left: -3px;
+    }
+    &.left {
+      background: linear-gradient(to right, rgba(255,255,255,.3), rgba(255,255,255,1));
+      margin-right: -3px;
+      // @extend .overlay
+    }
+  }
+  .column.image {
+    padding: 0 20px;
+    width: 60%;
+    img {
+      width: 100%;
+    }
+  }
 }
