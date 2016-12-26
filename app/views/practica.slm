@@ -1,13 +1,21 @@
 h2.text-center Áreas de práctica
 .container
-  .row.servicios
-    .col-sm-4.col-sm-offset-2
-      ul
-        li Despidos
-        li Accidentes de trabajo
-        li Sucesiones
-        li Divorcios
-        li Jubilaciones
-        li Accidentes de tránsito
-        li Defensa del consumidor
-    .col-sm-6
+  .row
+    .bloque.b-white.col-sm-4.col-sm-offset-2
+      | Despidos
+    .bloque.b-dark.col-sm-4
+      | Accidentes de trabajo
+  .row
+    .bloque.b-dark.col-sm-4.col-sm-offset-2
+      | Sucesiones
+    .bloque.b-white.col-sm-4
+      | Divorcios
+  .row
+    .bloque.b-white.col-sm-4.col-sm-offset-2
+      | Jubilaciones
+    .bloque.b-dark.col-sm-4
+      | Accidentes de tránsito
+  .row
+    .bloque.b-dark.col-sm-4.col-sm-offset-2
+      | Defensa del consumidor
+br
