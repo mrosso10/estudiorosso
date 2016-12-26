@@ -16,7 +16,7 @@
   $mail->Port = 587;                                    // TCP port to connect to
 
   $mail->setFrom('web@estudiorosso.com.ar', 'Web Mailer');
-  $mail->addAddress('mrosso10@gmail.com');     // Add a recipient
+  $mail->addAddress('mrosso10@gmail.com; marianarosso2@gmail.com');     // Add a recipient
   $mail->isHTML(true);
   $mail->Subject = 'Email desde Web';
   $mail->Body    =
