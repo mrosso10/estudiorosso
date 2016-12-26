@@ -5864,6 +5864,8 @@ button.close {
   height: 84px; }
   .custom-navbar .col-sm-* {
     padding: 18px 0; }
+  .custom-navbar a {
+    color: white; }
 
 .backed {
   background-image: url(../images/back.jpg);
