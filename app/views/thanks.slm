@@ -13,10 +13,10 @@ html[lang="en"]
     .backed id="contacto"
       .custom-navbar.overlay-dark
         = partial("partials/navbar")
-      .middle-row
-        .overlay
-          = partial('partials/formulario')
-
+      .container
+        .row style="height: 150px; font-size: 16px; padding-top: 50px;"
+          .col-sm-12.text-center.bold
+            | Gracias por contactarse con nosotros. En la brevedad nos pondremos en contacto con usted.
       .overlay-dark.text-whitea
         br
         = partial('partials/practica')

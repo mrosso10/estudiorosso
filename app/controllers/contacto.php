@@ -1,8 +1,5 @@
 <?php
-  $smtp_host = $_ENV['SMTP_HOST'];
-  $smtp_user = $_ENV['SMTP_USER'];
-  $smtp_password = $_ENV['SMTP_PASSWORD'];
-
+  require('environment.php');
   require('phpmailer.class.php');
   require('smtp.class.php');
 
@@ -20,13 +17,18 @@
 
   $mail->setFrom('web@estudiorosso.com.ar', 'Web Mailer');
   $mail->addAddress('mrosso10@gmail.com');     // Add a recipient
-
+  $mail->isHTML(true);
   $mail->Subject = 'Email desde Web';
-  $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+  $mail->Body    =
+    "Nombre: " . $_POST['mensaje'] . "<br>" .
+    "Teléfono: " . $_POST['telefono'] . "<br>" .
+    "Email: " . $_POST['email'] . "<br>" .
+    "Mensaje: " . $_POST['mensaje'] . "<br>";
 
   if(!$mail->send()) {
-      echo 'Message could not be sent.';
-      echo 'Mailer Error: ' . $mail->ErrorInfo;
+    // echo 'Message could not be sent.';
+    // echo 'Mailer Error: ' . $mail->ErrorInfo;
   } else {
-      echo 'Message has been sent';
   }
+  header('Location: /thanks.html');
+

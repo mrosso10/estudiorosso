@@ -5857,6 +5857,9 @@ button.close {
 .dilb {
   display: inline-block; }
 
+.bold {
+  font-weight: bold; }
+
 .custom-navbar {
   height: 84px; }
   .custom-navbar .col-sm-* {

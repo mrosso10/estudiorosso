@@ -6,7 +6,7 @@ gulp.task('default', ['sass', 'slm', 'php', 'img', 'js', 'jquery'], function() {
 });
 
 gulp.task('slm', function(){
-  gulp.src("./app/views/index.slm")
+  gulp.src("./app/views/*.slm")
     .pipe(slm())
     .pipe(gulp.dest("./dist/"));
 });
