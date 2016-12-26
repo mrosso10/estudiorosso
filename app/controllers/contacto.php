@@ -20,7 +20,7 @@
   $mail->isHTML(true);
   $mail->Subject = 'Email desde Web';
   $mail->Body    =
-    "Nombre: " . $_POST['mensaje'] . "<br>" .
+    "Nombre: " . $_POST['nombre'] . "<br>" .
     "Teléfono: " . $_POST['telefono'] . "<br>" .
     "Email: " . $_POST['email'] . "<br>" .
     "Mensaje: " . $_POST['mensaje'] . "<br>";
