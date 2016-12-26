@@ -19,7 +19,7 @@
   background-color: rgba(255, 255, 255, 0.4);
 }
 .overlay-dark {
-  background-color: rgba(82, 82, 82, 0.43);;
+  background-color: rgba(82, 82, 82, 0.43);
 }
 .middle-row {
   .container {
@@ -28,13 +28,9 @@
       padding: 80px;
     }
   }
-  .white-font {
-    color: white;
-    text-shadow: black 1px 3px;
-  }
-  .descripcion {
-    text-shadow: grey 1px 1px;
-  }
+}
+.grey-shadow {
+  text-shadow: grey 1px 1px;
 }
 
 a.home {
@@ -63,16 +59,15 @@ a.home {
   }
 }
 
-form {
-  color: white;
-  text-shadow: black 1px 1px;
-}
 .servicios {
   font-size: 16px;
   font-weight: bold;
   li {
     margin-bottom: 6px;
   }
+}
+.text-white {
+  color: white;
 }
 .back-white {
   background-color: white;
@@ -82,8 +77,9 @@ form {
   .container {
     padding: 40px;
     font-size: 18px;
-    color: white;
-    text-shadow: black 1px 3px;
+    // color: white;
+    font-weight: bold;
+    // text-shadow: black 1px 3px;
   }
 }
 
@@ -110,36 +106,67 @@ form {
 .footer {
   padding: 30px 0;
   font-size: 16px;
-  color: white;
-  text-shadow: black 1px 1px;
   font-weight: bold;
 }
 
+
+
+
+
+
+
+
 .flyer {
-  .column {
-    display: inline-block;
-    height: 900px;
-  }
-  .column.left, .column.right {
-    width: 20%;
-  }
-  .column {
-    &.right {
-      background: linear-gradient(to left, rgba(255,255,255,.3), rgba(255,255,255,1));
-      // @extend .overlay
-      margin-left: -3px;
+  height: 550px;
+  width: 100%;
+  display: inline-block;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: 100%;
+  padding-top: 250px;
+  .text {
+    height: 40px;
+    font-size: 23px;
+    font-weight: bold;
+    &.white {
+      background-color: rgba(255, 255, 255, 0.4);
     }
-    &.left {
-      background: linear-gradient(to right, rgba(255,255,255,.3), rgba(255,255,255,1));
-      margin-right: -3px;
-      // @extend .overlay
-    }
-  }
-  .column.image {
-    padding: 0 20px;
-    width: 60%;
-    img {
-      width: 100%;
+    &.dark {
+      color: white;
+      background-color: rgba(82, 82, 82, 0.43);
     }
   }
 }
+
+
+
+
+
+// .flyer {
+//   .column {
+//     display: inline-block;
+//     height: 900px;
+//   }
+//   .column.left, .column.right {
+//     width: 20%;
+//   }
+//   .column {
+//     &.right {
+//       background: linear-gradient(to left, rgba(255,255,255,.3), rgba(255,255,255,1));
+//       // @extend .overlay
+//       margin-left: -3px;
+//     }
+//     &.left {
+//       background: linear-gradient(to right, rgba(255,255,255,.3), rgba(255,255,255,1));
+//       margin-right: -3px;
+//       // @extend .overlay
+//     }
+//   }
+//   .column.image {
+//     padding: 0 20px;
+//     width: 60%;
+//     img {
+//       width: 100%;
+//     }
+//   }
+// }

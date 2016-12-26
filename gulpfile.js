@@ -1,20 +1,13 @@
 var gulp = require('gulp');
-var slim = require("gulp-slim");
+var slm = require("gulp-slm");
 var sass = require("gulp-sass");
 
-gulp.task('default', function() {
+gulp.task('default', ['sass', 'slm', 'php', 'img', 'js', 'jquery'], function() {
 });
 
-gulp.task('hello', function() {
-  console.log('Hello Zell');
-});
-
-gulp.task('slim', function(){
-  gulp.src("./app/views/*.slim")
-    .pipe(slim({
-      // rails: true,
-      // pretty: true,
-    }))
+gulp.task('slm', function(){
+  gulp.src("./app/views/index.slm")
+    .pipe(slm())
     .pipe(gulp.dest("./dist/"));
 });
 
@@ -70,9 +63,9 @@ gulp.task('sass', ['fonts'], function () {
         .pipe(gulp.dest(scss.out));
 });
 
-gulp.task('watch', ['sass', 'slim', 'php', 'img', 'js', 'jquery'], function(){
+gulp.task('watch', ['sass', 'slm', 'php', 'img', 'js', 'jquery'], function(){
   gulp.watch('app/assets/javascripts/**/*.js', ['js']);
-  gulp.watch('app/views/*.slim', ['slim']);
+  gulp.watch('app/views/*.slm', ['slm']);
   gulp.watch('app/controllers/*.php', ['php']);
   gulp.watch(scss.watch, ['sass']);
 });

@@ -1,0 +1,72 @@
+doctype html
+html[lang="en"]
+  head
+    meta[charset="utf-8"]
+    meta[http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    title Estudio ROSSO
+    script src="javascripts/jquery-3.1.1.min.js"
+    script src="javascripts/main.js"
+    link rel="stylesheet" type="text/css" href="css/main.css"
+
+  body
+    .backed id="contacto"
+      .custom-navbar.overlay-dark
+        = partial("navbar")
+      .middle-row
+        .overlay
+          = partial('formulario')
+
+      .overlay-dark.text-whitea
+        br
+        = partial('practica')
+
+      .banner.back-white
+        = partial('banner')
+
+      .flyer style="background-image: url(images/backgrounds/despidos.jpg)"
+        .text.dark
+          .container
+            .row
+              .col-sm-12
+                | DESPIDOS
+        .text.white
+          .container
+            .row
+              .col-sm-12
+                | DIFERENCIAS SALARIALES
+        .text.dark
+          .container
+            .row
+              .col-sm-12
+                | TRABAJO NO REGISTRADO
+        .text.white
+          .container
+            .row
+              .col-sm-12
+                | HOSTIGAMIENTO LABORAL
+      .banner.back-white
+        = partial('banner')
+      .flyer style="background-image: url(images/backgrounds/transito.jpg)"
+        .text.dark
+          .container
+            .row
+              .col-sm-12
+                | ACCIDENTES DE TRÁNSITO
+        .text.white
+          .container
+            .row
+              .col-sm-12
+                | RECLAMOS ANTE COMPAÑÍAS ASEGURADORAS
+        .text.dark
+          .container
+            .row
+              .col-sm-12
+                | CIUDAD DE BUENOS AIRES
+        .text.white
+          .container
+            .row
+              .col-sm-12
+                | PROVINCIA DE BUENOS AIRES
+      .footer.back-white
+        = partial('footer')

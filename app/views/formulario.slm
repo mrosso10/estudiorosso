@@ -1,0 +1,16 @@
+.container
+  .row
+    .col-sm-4.col-sm-offset-2
+      .f4.grey-shadow
+        | Te brindamos asistencia y soluciones jurídicas en las áreas laboral, civil y comercial, con el profesionalismo y delicadeza que cada situación requiere, teniendo en cuenta tu situación personal y patrimonial. Realizá tu consulta.
+    .col-sm-4
+      form method="post" action="contacto.php"
+        .form-group
+          input.form-control type="text" name="nombre" placeholder="Nombre"
+        .form-group
+          input.form-control type="text" name="telefono" placeholder="Teléfono"
+        .form-group
+          input.form-control type="text" name="email" placeholder="Email"
+        .form-group
+          textarea.form-control name="mensaje" placeholder="Mensaje" rows="3"
+        button.btn.btn-default type="submit" Enviar

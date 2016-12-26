@@ -1,0 +1,6 @@
+.container
+  .row
+    .col-sm-6
+      | Estudio Rosso
+    .col-sm-6.text-right
+      | &copy; Copyright 2017 - Todos los derechos reservados
