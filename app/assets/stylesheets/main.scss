@@ -4,12 +4,14 @@
 
 .custom-navbar {
   height: 84px;
+  color: black;
+  border-bottom: 2px solid grey;
   
   .col-sm-* {
     padding: 18px 0;
   }
   a {
-    color: white;
+    color: black;
   }
 }
 .backed {
@@ -133,7 +135,7 @@ a.home {
   background-size: 100%;
   padding-top: 250px;
   .text {
-    height: 40px;
+    // height: 40px;
     font-size: 23px;
     font-weight: bold;
     &.white {

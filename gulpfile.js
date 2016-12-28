@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var slm = require("gulp-slm");
 var sass = require("gulp-sass");
 
-gulp.task('default', ['sass', 'slm', 'php', 'img', 'js', 'jquery'], function() {
+gulp.task('default', ['sass', 'slm', 'php', 'img', 'js'], function() {
 });
 
 gulp.task('slm', function(){
@@ -63,7 +63,7 @@ gulp.task('sass', ['fonts'], function () {
         .pipe(gulp.dest(scss.out));
 });
 
-gulp.task('watch', ['sass', 'slm', 'php', 'img', 'js', 'jquery'], function(){
+gulp.task('watch', ['sass', 'slm', 'php', 'img', 'js'], function(){
   gulp.watch('app/assets/javascripts/**/*.js', ['js']);
   gulp.watch('app/views/*.slm', ['slm']);
   gulp.watch('app/controllers/*.php', ['php']);
@@ -71,12 +71,12 @@ gulp.task('watch', ['sass', 'slm', 'php', 'img', 'js', 'jquery'], function(){
 });
 
 
-var jquery = require('gulp-jquery');
-gulp.task('jquery', function () {
-    return jquery.src({
-        release: 2, //jQuery 2 
-        flags: ['-deprecated', '-event/alias', '-ajax/script', '-ajax/jsonp', '-exports/global']
-    })
-    .pipe(gulp.dest('./dist/vendor/'));
-    // creates ./public/vendor/jquery.custom.js 
-});
+// var jquery = require('gulp-jquery');
+// gulp.task('jquery', function () {
+//     return jquery.src({
+//         release: 2, //jQuery 2 
+//         flags: ['-deprecated', '-event/alias', '-ajax/script', '-ajax/jsonp', '-exports/global']
+//     })
+//     .pipe(gulp.dest('./dist/vendor/'));
+//     // creates ./public/vendor/jquery.custom.js 
+// });

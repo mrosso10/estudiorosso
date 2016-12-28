@@ -5861,11 +5861,13 @@ button.close {
   font-weight: bold; }
 
 .custom-navbar {
-  height: 84px; }
+  height: 84px;
+  color: black;
+  border-bottom: 2px solid grey; }
   .custom-navbar .col-sm-* {
     padding: 18px 0; }
   .custom-navbar a {
-    color: white; }
+    color: black; }
 
 .backed {
   background-image: url(../images/back.jpg);
@@ -5964,7 +5966,6 @@ a.home {
   background-size: 100%;
   padding-top: 250px; }
   .flyer .text {
-    height: 40px;
     font-size: 23px;
     font-weight: bold; }
     .flyer .text.white {

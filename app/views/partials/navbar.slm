@@ -7,8 +7,8 @@
         .f2.dilb.brand
           span.light ESTUDIO
           | ROSSO
-    .col-sm-6.text-right.text-white
+    .col-sm-6.text-right.text-whitex
       .f4 Hacenos tu consulta ahora
-      .f4 011 4961 2710
       .f4
         a href="mailto:info@estudiorosso.com.ar" info@estudiorosso.com.ar
+      .f4 Rodríguez Peña 544, Capital Federal

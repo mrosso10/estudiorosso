@@ -42,3 +42,49 @@
       .row
         .col-sm-12
           | PROVINCIA DE BUENOS AIRES
+.banner.back-white
+  = partial('banner')
+.flyer style="background-image: url(images/backgrounds/divorcio.jpg)"
+  .text.dark
+    .container
+      .row
+        .col-sm-12
+          | DIVORCIO EXPRESS
+  .text.white
+    .container
+      .row
+        .col-sm-12
+          | EN C.A.B.A. Y GRAN BUENOS AIRES
+  .text.dark
+    .container
+      .row
+        .col-sm-12
+          | TE ASESORAMOS SOBRE LOS ASPECTOS PROCESALES Y EFECTOS PATRIMONIALES
+  .text.white
+    .container
+      .row
+        .col-sm-12
+          | DEL DIVORCIO GUIÁNDOTE HACIA UN RESULTADO FAVORABLE, ARMONIOSO Y PACÍFICO
+.banner.back-white
+  = partial('banner')
+.flyer style="background-image: url(images/backgrounds/sucesiones.jpg)"
+  .text.dark
+    .container
+      .row
+        .col-sm-12
+          | SUCESIONES
+  .text.white
+    .container
+      .row
+        .col-sm-12
+          | REPARACIÓN HISTÓRICA
+  .text.dark
+    .container
+      .row
+        .col-sm-12
+          | JUBILACIONES
+  .text.white
+    .container
+      .row
+        .col-sm-12
+          | PROVINCIA DE BUENOS AIRES
