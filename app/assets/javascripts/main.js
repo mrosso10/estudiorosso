@@ -11,3 +11,15 @@ jQuery(document).ready(function() {
     });
   });
 });
+
+function go_top() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 1000);
+}
+
+function go_map() {
+  $('html, body').animate({
+    scrollTop: $('.mapa').offset()['top']
+  }, 1000);
+}

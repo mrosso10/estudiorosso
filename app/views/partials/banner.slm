@@ -2,4 +2,4 @@
   .row
     .col-sm-10.col-sm-offset-1.text-center
       / p El estudio cuenta con un equipo multidisciplinario, en caso que el cliente lo desee, para poder trabajar en forma conjunta la situaciones conflictivas.
-      a.btn.btn-primary.btn-lg href="#contacto" Realizar consulta
+      a.btn.btn-primary.btn-lg href="javascript:go_top()" Realizar consulta

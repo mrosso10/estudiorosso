@@ -19,5 +19,10 @@ html[lang="en"]
     .banner.back-white
       = partial('partials/banner')
     = partial('partials/flyers')
+    br
+    br
+    .mapa.text-center
+      .f3 Nuestra ubicación
+      iframe (width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:Ei5Sb2Ryw61ndWV6IFBlw7FhIDU0NCwgQzEwMjBBREwgQ0FCQSwgQXJnZW50aW5h&key=AIzaSyBij4SAMmWmQuUlBY6mhCsdOP29jlX5uPU" allowfullscreen)
     .footer.back-white
       = partial('partials/footer')
