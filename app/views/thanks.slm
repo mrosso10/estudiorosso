@@ -5,7 +5,8 @@ html[lang="en"]
 
   body
     .backed id="contacto"
-      .custom-navbar.overlay-dark
+      / .custom-navbar.overlay-dark
+      .custom-navbar style="background-color: white"
         = partial("partials/navbar")
       .container
         .row style="height: 150px; font-size: 16px; padding-top: 50px;"
