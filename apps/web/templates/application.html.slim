@@ -1,0 +1,10 @@
+doctype html
+html[lang="en"]
+  head
+    = render partial: "head"
+
+  body class="#{local :device}"
+    = yield
+
+    .footer.back-white
+      = render partial: 'footer'

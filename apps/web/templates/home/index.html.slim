@@ -1,0 +1,23 @@
+.backed id="contacto"
+  .custom-navbar style="background-color: white"
+    = render partial: "navbar"
+  .middle-row
+    .overlay
+      = render partial: 'formulario'
+
+  .overlay-dark
+    br
+    = render partial: 'practica'
+
+.banner.back-white
+  = render partial: 'banner'
+= render partial: 'flyers'
+br
+br
+.container
+  .row
+    .col-sm-12
+      .mapa.text-center
+        .f3 Nuestra ubicación
+        .map-responsive
+          iframe (width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJffWbcsHKvJURLkLoSPTp9W0&key=AIzaSyBij4SAMmWmQuUlBY6mhCsdOP29jlX5uPU" allowfullscreen)
