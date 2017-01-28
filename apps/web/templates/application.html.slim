@@ -3,7 +3,7 @@ html[lang="en"]
   head
     = render partial: "head"
 
-  body class="#{local :device}"
+  body data-device="#{local :current_device}"
     = yield
 
     .footer.back-white

@@ -1,7 +1,15 @@
+@import "bootstrap";
 @import "front-layout";
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .custom-navbar {
-  height: 84px;
+  // height: 84px;
+  // @media (max-width: 767px) {
+  //   height: 168px;
+  // }
   color: black;
   border-bottom: 2px solid grey;
   
@@ -78,12 +86,6 @@ a.home {
   }
 }
 
-@media(max-width: 600px) {
-  .f2 {
-    font-size: 20px;
-  }
-}
-
 .perfil {
   .image-wrapper {
     border-radius: 270px;
@@ -103,9 +105,6 @@ a.home {
   font-size: 16px;
   font-weight: bold;
 }
-
-
-
 
 .bloque {
   font-size: 19px;
