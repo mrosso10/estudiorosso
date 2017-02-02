@@ -14,6 +14,7 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'jquery-hanami'
 gem 'device_detector'
+gem 'letter_opener'
 
 group :development do
   # Code reloading
