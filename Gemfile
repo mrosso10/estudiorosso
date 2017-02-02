@@ -24,6 +24,7 @@ end
 group :test, :development do
   gem 'dotenv', '~> 2.0'
   gem 'byebug'
+  gem 'letter_opener'
 end
 
 group :test do

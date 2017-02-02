@@ -1,7 +1,8 @@
 class Mailers::Contact
   include Hanami::Mailer
 
-  from    '<from>'
-  to      '<to>'
-  subject 'Hello'
+  from    'web@estudiorosso.com.ar'
+  to      'mrosso10@gmail.com'
+  subject 'Email desde Web'
+  templates
 end
