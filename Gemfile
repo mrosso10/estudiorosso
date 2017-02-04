@@ -16,6 +16,8 @@ gem 'jquery-hanami'
 gem 'device_detector'
 gem 'letter_opener'
 
+gem 'whenever', require: false
+
 group :development do
   # Code reloading
   # See: http://hanamirb.org/guides/projects/code-reloading
