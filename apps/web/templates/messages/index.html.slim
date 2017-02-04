@@ -7,10 +7,12 @@ table.table.table-striped
     th Email
     th Teléfono
     th Mensaje
+    th Enviado?
   - collection.each do |message|
     tr
       td = message.created_at
       td = message.name
       td = message.email
       td = message.telephone
-      td = message.message
+      td style="max-width: 400px" = message.message
+      td = message.mail_delivered

@@ -10,3 +10,11 @@ end
 
 task default: :test
 task spec: :test
+
+task hola: :environment do
+  repository = MessageRepository.new
+  repository.non_delivered.each do |message|
+    Mailers::Contact.deliver(message: message)
+    repository.update(message.id, mail_delivered: true)
+  end
+end

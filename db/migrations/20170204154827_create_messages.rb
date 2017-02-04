@@ -6,6 +6,7 @@ Hanami::Model.migration do
       column :email, String
       column :telephone, String
       column :message, String
+      column :mail_delivered, TrueClass, default: false, null: false
       column :created_at, DateTime
       column :updated_at, DateTime
     end
