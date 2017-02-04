@@ -7,10 +7,6 @@ body {
 }
 
 .custom-navbar {
-  // height: 84px;
-  // @media (max-width: 767px) {
-  //   height: 168px;
-  // }
   color: black;
   border-bottom: 2px solid grey;
   
@@ -45,6 +41,13 @@ body {
   text-shadow: grey 1px 1px;
 }
 
+@media (max-width: 768px) {
+  header, footer {
+    .row [class*="col-"] {
+      text-align: center;
+    }
+  }
+}
 a.home {
   color: black;
   &:hover {
@@ -53,11 +56,27 @@ a.home {
   &:visited {
     color: black;
   }
-  img {
+  img.logo {
     width: 30px;
     vertical-align: top;
     margin-right: 10px;
     margin-top: 7px;
+  }
+  img.logo_texto {
+    margin-top: 22px;
+
+    @media (max-width: 991px) {
+      max-width: 302px;
+      margin-top: 28px;
+    }
+    // @media (max-width: 767px) {
+    //   max-width: 300px;
+    //   margin-top: 28px;
+    // }
+    @media (max-width: 380px) {
+      max-width: 244px;
+      margin-top: 35px;
+    }
   }
   .brand {
     margin-top: 20px;
@@ -101,10 +120,15 @@ a.home {
     font-size: 17px;
   }
 }
-.footer {
+footer {
   padding: 30px 0;
   font-size: 16px;
   font-weight: bold;
+
+  img {
+    max-height: 40px;
+    margin-right: 20px;
+  }
 }
 
 .bloque {
