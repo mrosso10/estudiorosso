@@ -11,7 +11,7 @@ end
 task default: :test
 task spec: :test
 
-task hola: :environment do
+task process_emails: :environment do
   repository = MessageRepository.new
   repository.non_delivered.each do |message|
     Mailers::Contact.deliver(message: message)
