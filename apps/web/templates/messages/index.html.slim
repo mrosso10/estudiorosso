@@ -1,0 +1,16 @@
+h3 Mensajes
+
+table.table.table-striped
+  tr
+    th Fecha
+    th Nombre
+    th Email
+    th Teléfono
+    th Mensaje
+  - collection.each do |message|
+    tr
+      td = message.created_at
+      td = message.name
+      td = message.email
+      td = message.telephone
+      td = message.message
