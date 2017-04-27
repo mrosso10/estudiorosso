@@ -18,7 +18,7 @@ Hanami.configure do
     #    adapter :sql, 'postgres://localhost/estudiorosso_development'
     #    adapter :sql, 'mysql://localhost/estudiorosso_development'
     #
-    adapter :sql, ENV['DATABASE_URL']
+    adapter :sql, ENV['ESTUDIOROSSO_DATABASE_URL']
 
     ##
     # Migrations
