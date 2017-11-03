@@ -26,3 +26,8 @@ puma -b unix://./tmp/sockets/puma.sock -e production --pidfile tmp/pids/puma.pid
 kill `cat tmp/pids/puma.pid`; puma -b unix://./tmp/sockets/puma.sock -e production --pidfile tmp/pids/puma.pid -d
 
 bundle exec whenever --update-crontab
+
+
+
+HANAMI_ENV=production bundle exec rake process_emails
+
