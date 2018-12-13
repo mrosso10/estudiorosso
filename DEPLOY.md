@@ -32,7 +32,7 @@ bundle exec whenever --update-crontab
 HANAMI_ENV=production bundle exec rake process_emails
 
 
-nano ~/.bash_profile
+nano ~/.bash_aliases
 export ESTUDIOROSSO_DATABASE_URL="postgres://estudiorosso:estudiorosso@localhost/estudiorosso_production"
 
 
