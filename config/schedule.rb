@@ -5,6 +5,7 @@
 
 # Example:
 #
+env :PATH, ENV['PATH']
 set :output, "tmp/cron_log.log"
 set :environment_variable, "HANAMI_ENV"
 # set :environment, "development"
