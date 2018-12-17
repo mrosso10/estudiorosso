@@ -18,6 +18,7 @@ bundle exec hanami assets precompile
 
 mkdir tmp/pids
 mkdir tmp/sockets
+mkdir tmp/log
 
 # Start puma
 bundle exec puma -b unix://./tmp/sockets/puma.sock -e production --pidfile tmp/pids/puma.pid -d
@@ -36,7 +37,7 @@ nano ~/.bash_aliases
 export ESTUDIOROSSO_DATABASE_URL="postgres://estudiorosso:estudiorosso@localhost/estudiorosso_production"
 
 
-bundle exec hanami db migrate
+HANAMI_ENV=production bundle exec hanami db migrate
 
 
 sudo ln -s /var/www/estudiorosso/config/nginx.conf /etc/nginx/sites-enabled/estudiorosso.conf
