@@ -6,11 +6,12 @@
 # Example:
 #
 env :PATH, ENV['PATH']
+env :GEM_PATH, ENV['GEM_PATH']
 set :output, "tmp/cron_log.log"
 set :environment_variable, "HANAMI_ENV"
 # set :environment, "development"
 #
-every 5.minute do
+every 1.minute do
   rake "process_emails"
 end
 #
