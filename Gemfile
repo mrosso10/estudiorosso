@@ -8,7 +8,7 @@ gem 'hanami-model', '~> 0.7'
 gem 'pg'
 
 gem 'slim'
-gem 'puma', '~> 3.12.4'
+gem 'puma', '~> 4.3.9'
 gem 'sass'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'

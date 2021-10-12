@@ -111,11 +111,13 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.4.0)
     minitest (5.10.1)
+    nio4r (2.5.8)
     nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     pg (0.19.0)
     public_suffix (2.0.4)
-    puma (3.12.4)
+    puma (4.3.9)
+      nio4r (~> 2.0)
     rack (1.6.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -184,7 +186,7 @@ DEPENDENCIES
   letter_opener
   minitest
   pg
-  puma (~> 3.12.4)
+  puma (~> 4.3.9)
   rake
   sass
   shotgun
